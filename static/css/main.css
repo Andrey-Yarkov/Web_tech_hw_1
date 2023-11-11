@@ -1,0 +1,136 @@
+main > .container {
+  padding: 120px 15px 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: bold;
+}
+
+.webpage-title {
+  font-size: 40px;
+  font-family: Inter;
+  text-align: left;
+}
+
+.search-block {
+  font-size: 40px;
+  font-family: Inter;
+}
+
+.profile-block {
+  font-family: Inter;
+  align-items: center;
+  margin: auto;
+}
+
+.title-text {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.question {
+  border: 2px solid gray;
+  margin-top: 20px;
+  padding: 10px 30px 20px 10px;
+  border-radius: 10px;
+}
+
+.question-avatar {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.likes-block {
+  margin: auto;
+  width: 80%;
+  display: inline-block;
+}
+
+.likes-counter {
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: bold;
+  align-self: center;
+  text-align: center;
+  margin: auto 20px auto auto;
+}
+
+.likes-btn-group {
+  width: 30px;
+}
+
+.likes-button {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0px!important;
+  height: fit-content;
+  width: 30px;
+  margin: auto 0 auto 0;
+}
+
+.question-title {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
+}
+
+.question-text {
+  font-size: 18px;
+  font-family: Inter;
+  margin-top: 10px;
+}
+
+.question-extra {
+  margin-top: 10px;
+}
+
+.page-navigation {
+  font-size: 18px;
+  font-family: Inter;
+  margin-top: 30px;
+}
+
+.third-party-info {
+  margin-left: 50px;
+}
+
+.tags {
+  font-size: 20px;
+  font-family: Inter;
+  margin-bottom: 30px;
+}
+
+.members {
+  font-size: 20px;
+  font-family: Inter;
+}
+
+.footnote {
+  font-size: 20px;
+  font-family: Inter;
+}
