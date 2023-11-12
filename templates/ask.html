@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 <head>
 
-    <link href="/static/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="../static/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
           crossorigin="anonymous">
 
@@ -24,7 +24,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="../static/css/main.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column h-100">
 
@@ -60,71 +60,43 @@
         <div class="row">
             <div class="col-8">
                 <div class="row title-text">
-                    <h1 style="display:inline">Registration</h1>
+                    <h1 style="display:inline">New Question</h1>
                 </div>
-                <div class="wrong-email-warning">Sorry, this email address has already been registered!</div>
-                <div class="row signup-block">
-                    <div class="col-3 signup-label">
-                        Login
+                <div class="row new-question-title">
+                    <div class="col-1 new-question-label">
+                        Title
                     </div>
-                    <div class="col-9 signup-field">
-                        <input type="login" class="form-control" id="login" placeholder="Enter your login here"
+                    <div class="col-11">
+                        <input type="text" class="form-control" id="title" placeholder="Enter your question title"
                                value="" required>
+                        <div class="invalid-feedback">
+                            Valid question title required.
+                        </div>
                     </div>
                 </div>
-                <div class="row signup-block">
-                    <div class="col-3 signup-label">
-                        Email
+                <div class="row new-question-text">
+                    <div class="col-1 new-question-label">
+                        Text
                     </div>
-                    <div class="col-9 signup-field">
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email here"
+                    <div class="col-11">
+                        <textarea class="form-control" id="text" rows="16"
+                                  placeholder="Enter your question here"></textarea>
+                    </div>
+                </div>
+                <div class="row new-question-tags">
+                    <div class="col-1 new-question-label">
+                        Tags
+                    </div>
+                    <div class="col-11">
+                        <input type="text" class="form-control" id="tags" placeholder="Enter your question tags"
                                value="" required>
-                    </div>
-                </div>
-                <div class="row signup-block">
-                    <div class="col-3 signup-label">
-                        Nickname
-                    </div>
-                    <div class="col-9 signup-field">
-                        <input type="text" class="form-control" id="nickname" placeholder="Enter your nickname here"
-                               value="" required>
-                    </div>
-                </div>
-                <div class="row signup-block">
-                    <div class="col-3 signup-label">
-                        Password
-                    </div>
-                    <div class="col-9 signup-field">
-                        <input type="password" class="form-control" id="password" placeholder="Enter your password here"
-                               value="" required>
-                    </div>
-                </div>
-                <div class="row signup-block">
-                    <div class="col-3 signup-label">
-                        Repeat password
-                    </div>
-                    <div class="col-9 signup-field">
-                        <input type="password" class="form-control" id="rep-password" placeholder="Repeat your password"
-                               value="" required>
-                    </div>
-                </div>
-                <div class="row signup-block">
-                    <div class="col-3 signup-label">
-                        Upload avatar
-                    </div>
-                    <div class="col-4 signup-avatar-field">
-                        <input type="password" class="form-control" id="avatar" placeholder="Image path"
-                               value="" required>
-                    </div>
-                    <div class="col-5">
-                        <button class="btn btn-outline-secondary signup-choose-avatar-btn" type="submit">Choose</button>
-                    </div>
-                </div>
-                <div class="row signup-extra">
-                    <div class="col-3">
-                    </div>
-                    <div class="col-9">
-                        <button class="btn btn-outline-primary signup-btn" type="submit">Register!</button>
+                        <div class="invalid-feedback">
+                            Valid tags required.
+                        </div>
+
+                        <div class="question-ask-btn-block">
+                    <button class="btn btn-outline-primary question-answer-btn" type="submit">ASK!</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,7 +135,7 @@
 </footer>
 
 
-<script src="/static/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
+<script src="/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 

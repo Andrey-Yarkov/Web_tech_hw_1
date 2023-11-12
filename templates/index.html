@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 <head>
 
-    <link href="/static/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="../static/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
           crossorigin="anonymous">
 
@@ -24,7 +24,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="../static/css/main.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column h-100">
 
@@ -41,8 +41,7 @@
 
             <div class="col-6 search-block">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-                           style="max-width: 80%">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="max-width: 80%">
                     <button class="btn btn-outline-light" type="submit">ASK!</button>
                 </form>
             </div>
@@ -59,9 +58,13 @@
     <div class="container">
         <div class="row">
             <div class="col-8">
-                <div class="row">
+                <div class="row title-text">
+                    <h1 style="display:inline">New Questions</h1>
+                    <h3 style="display:inline; margin-left: 10px"><a href="">Hot questions</a></h3>
+                </div>
+                <div class="row question">
                     <div class="col-2">
-                        <img src="/static/img/profile_avatar.jpg" alt="" class="current-question-avatar">
+                        <img src="../static/img/profile_avatar.jpg" alt="" class="question-avatar">
                         <div class="d-flex justify-content-center likes-block">
                             <div class="likes-counter">
                                 0
@@ -73,8 +76,8 @@
                         </div>
                     </div>
                     <div class="col-10">
-                        <div class="current-question-title">First question?</div>
-                        <div class="current-question-text">
+                        <div class="question-title"><a href="">First question?</a></div>
+                        <div class="question-text">
                             Question text question text question text question text question text question text question
                             text
                             question text question text question text question text question text question text question
@@ -83,15 +86,15 @@
                             text
                         </div>
                         <div class="question-extra">
-                            <h4>Tags: <a href="">tag1</a> <a href="">tag2</a>
+                            <h4 style="display:inline;"><a href="">Answers (0)</a></h4>
+                            <h4 style="display:inline; margin-left: 10px">Tags: <a href="">tag1</a> <a href="">tag2</a>
                             </h4>
                         </div>
                     </div>
                 </div>
-                <hr class="hr hr-blurry"/>
-                <div class="row answer">
+                <div class="row question">
                     <div class="col-2">
-                        <img src="/static/img/profile_avatar.jpg" alt="" class="answer-avatar">
+                        <img src="../static/img/profile_avatar.jpg" alt="" class="question-avatar">
                         <div class="d-flex justify-content-center likes-block">
                             <div class="likes-counter">
                                 0
@@ -103,7 +106,8 @@
                         </div>
                     </div>
                     <div class="col-10">
-                        <div class="answer-text">
+                        <div class="question-title"><a href="">First question?</a></div>
+                        <div class="question-text">
                             Question text question text question text question text question text question text question
                             text
                             question text question text question text question text question text question text question
@@ -111,17 +115,16 @@
                             question text question text question text question text question text question text question
                             text
                         </div>
-                        <div class="form-check answer-extra">
-                            <input class="form-check-input" type="checkbox" value="" id="check1">
-                            <label class="form-check-label" for="check1">
-                                Correct!
-                            </label>
+                        <div class="question-extra">
+                            <h4 style="display:inline;"><a href="">Answers (0)</a></h4>
+                            <h4 style="display:inline; margin-left: 10px">Tags: <a href="">tag1</a> <a href="">tag2</a>
+                            </h4>
                         </div>
                     </div>
                 </div>
-                <div class="row answer">
+                <div class="row question">
                     <div class="col-2">
-                        <img src="/static/img/profile_avatar.jpg" alt="" class="answer-avatar">
+                        <img src="../static/img/profile_avatar.jpg" alt="" class="question-avatar">
                         <div class="d-flex justify-content-center likes-block">
                             <div class="likes-counter">
                                 0
@@ -133,7 +136,8 @@
                         </div>
                     </div>
                     <div class="col-10">
-                        <div class="answer-text">
+                        <div class="question-title"><a href="">First question?</a></div>
+                        <div class="question-text">
                             Question text question text question text question text question text question text question
                             text
                             question text question text question text question text question text question text question
@@ -141,15 +145,14 @@
                             question text question text question text question text question text question text question
                             text
                         </div>
-                        <div class="form-check answer-extra">
-                            <input class="form-check-input" type="checkbox" value="" id="check2">
-                            <label class="form-check-label" for="check2">
-                                Correct!
-                            </label>
+                        <div class="question-extra">
+                            <h4 style="display:inline;"><a href="">Answers (0)</a></h4>
+                            <h4 style="display:inline; margin-left: 10px">Tags: <a href="">tag1</a> <a href="">tag2</a>
+                            </h4>
                         </div>
                     </div>
                 </div>
-                <div class="answer-page-navigation">
+                <div class="page-navigation">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -157,12 +160,6 @@
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item"><a class="page-link" href="#">Next</a></li>
                     </ul>
-                </div>
-                <hr class="hr hr-blurry"/>
-                <textarea class="form-control" id="answer-text" rows="8"
-                          placeholder="Enter your answer here"></textarea>
-                <div class="question-answer-btn-block">
-                    <button class="btn btn-outline-primary question-answer-btn" type="submit">Answer!</button>
                 </div>
             </div>
 
@@ -200,7 +197,7 @@
 </footer>
 
 
-<script src="/static/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
+<script src="/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
