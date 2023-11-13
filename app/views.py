@@ -5,6 +5,9 @@ from django.http import HttpResponse
 def index(request):
     return render(request, 'index.html')
 
+def index_auth(request):
+    return render(request, 'index_authorized.html')
+
 def tag(request):
     return render(request, 'tag.html')
 
